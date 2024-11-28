@@ -1,0 +1,20 @@
+x-default-opts: &default-opts
+  restart: unless-stopped
+  tty: true
+  stdin_open: true
+  privileged: false
+  ipc: private
+
+services:
+  bigdata:
+    <<: *default-opts
+    image: bigdata
+    container_name: bigdata
+    volumes:
+      - ./ANNs:/workspace
+    networks:
+      network:
+
+networks:
+  network:
+    driver: bridge

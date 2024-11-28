@@ -1,0 +1,14 @@
+# 虛擬環境
+.venv
+
+# 檢查點
+*.ipynb_checkpoints
+
+# 編譯的檔案
+*.pyc
+
+# 日誌
+*.log
+
+# 環境設定檔
+*.env
